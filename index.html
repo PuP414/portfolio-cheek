@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็ปพอตแก้ม</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="welcome-page" class="page active">
+            <h1>เลือกเมนูที่ต้องการดู</h1>
+            <div class="menu-selection">
+                <button onclick="showSection('about')">แนะนำตัว</button>
+                <button onclick="showSection('education')">ประวัติการศึกษา</button>
+                <button onclick="showSection('works')">ผลงาน</button>
+            </div>
+        </div>
+
+        <div id="about-section" class="page">
+            <button class="back-button" onclick="showSection('welcome')">กลับหน้าหลัก</button>
+            <h2>แนะนำตัว</h2>
+            <div class="image-gallery">
+                <img src="1portfolio.png" alt="Portfolio Image 1">
+                <img src="2portfolio.png" alt="Portfolio Image 2">
+                <img src="3portfolio.png" alt="Portfolio Image 3">
+                <img src="4portfolio.png" alt="Portfolio Image 4">
+            </div>
+        </div>
+
+        <div id="education-section" class="page">
+            <button class="back-button" onclick="showSection('welcome')">กลับหน้าหลัก</button>
+            <h2>ประวัติการศึกษา</h2>
+            <div class="image-gallery">
+                <img src="5portfolio.png" alt="Portfolio Image 5">
+            </div>
+        </div>
+
+        <div id="works-section" class="page">
+            <button class="back-button" onclick="showSection('welcome')">กลับหน้าหลัก</button>
+            <h2>ผลงาน</h2>
+            <div class="image-gallery">
+                <img src="6portfolio.png" alt="Portfolio Image 6">
+                <img src="7portfolio.png" alt="Portfolio Image 7">
+                <img src="8portfolio.png" alt="Portfolio Image 8">
+                <img src="9portfolio.png" alt="Portfolio Image 9">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
